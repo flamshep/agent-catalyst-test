@@ -76,23 +76,23 @@ The free tier includes $300 in credits for new users.
 - Resources are prorated hourly - if you delete the project after testing, it should cost less than $1/day
 - The $300 free tier credits will cover initial experimentation
 
-## 5. Start Dev Container
+## 5. Setup IDE
 
-Once prerequisites are complete, run the following commands from the root folder of this project:
+We use the IDE to also manage our local dev environment. VS Code makes this very easy to do! Download it [here](https://code.visualstudio.com/).
 
-```bash
-# Build the dev container
-docker compose build
+Once you've downloaded it, press Cmd + Shift + X to open up the Extensions Marketplace in the sidebar. Search for and install 'Dev Containers'
 
-# Start the container
-docker compose up
-```
+Once 'Dev Containers' is installed press Cmd + Shift + P to open up the Command Palette. Type in/select 'Dev Containers: Rebuild Containers without Cache'
 
-Navigate to http://localhost:8080 to verify the app is running.
+Once that is done
+
+1. Your development environment is up and running. You can access it's terminal in VS Code via Ctrl + `
+2. Your local app should be served at [localhost:8080](http://localhost:8080/)
+
 
 ## 6. Run Setup
 
-Inside the dev container (or using `docker exec`):
+Inside the dev container' terminal run:
 
 ```bash
 ./setup.sh
