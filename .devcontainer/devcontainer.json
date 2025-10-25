@@ -27,8 +27,6 @@
     }
   },
 
-  "forwardPorts": [8080],
-
   "postCreateCommand": "pre-commit install",
 
   "remoteUser": "devuser"
