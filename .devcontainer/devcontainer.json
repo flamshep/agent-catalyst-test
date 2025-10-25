@@ -4,6 +4,8 @@
   "service": "devcontainer",
   "workspaceFolder": "/workspace",
 
+  "initializeCommand": "test -f ${localWorkspaceFolder}/.env || cp ${localWorkspaceFolder}/.env.example ${localWorkspaceFolder}/.env",
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -27,7 +29,7 @@
 
   "forwardPorts": [8080],
 
-  "postCreateCommand": "test -f .env || cp .env.example .env && pre-commit install",
+  "postCreateCommand": "pre-commit install",
 
   "remoteUser": "devuser"
 }
